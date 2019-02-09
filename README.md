@@ -1,0 +1,2 @@
+# IonicBarkod
+Ionic Barcode Reader
