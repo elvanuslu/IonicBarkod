@@ -1,0 +1,48 @@
+<ion-menu [content]="content" class="my-side-menu">
+  <ion-header>
+    <ion-toolbar color="positive">
+      <ion-title>Ana Sayfa</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="my-side-menu">
+    <ion-card text-center color="positive">
+      <img src="../assets/imgs/logo.png" class="custom-avatar"/>
+      <h2>Veribis Crm</h2>
+      <p>www.veribis.com.tr</p>
+      <hr>
+    </ion-card>
+  
+    <button menuClose ion-item detail-none (click)="openHomePage()" color="positive">
+      <ion-icon name="home"></ion-icon> Ana Sayfa
+    </button>
+    <button menuClose ion-item detail-none (click)="openAktivitelistePage()" color="positive">
+      <ion-icon name="people"></ion-icon> Aktiviteler
+    </button>
+    <button menuClose ion-item detail-none (click)="openKisiler()" color="positive">
+      <ion-icon name="contact"></ion-icon> Kişiler
+    </button>
+    <button menuClose ion-item detail-none (click)="openFirmalarPage()" color="positive">
+      <ion-icon name="briefcase"></ion-icon> Firmalar
+    </button>
+    <button menuClose ion-item detail-none (click)="openRaporlarPage()" color="positive">
+      <ion-icon name="paper"></ion-icon> Raporlar
+    </button>
+    
+    <button menuClose ion-item detail-none (click)="openAyarlarPage()" color="positive">
+      <ion-icon name="settings"></ion-icon> Ayarlar
+    </button>
+  <!--    <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" color="positive">
+      <ion-icon name="home"></ion-icon> {{p.title}}
+      </button> -->
+
+  </ion-content>
+<ion-footer>
+<ion-toolbar color="positive">
+  <ion-title>veribis.com.tr</ion-title>
+</ion-toolbar>
+</ion-footer>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

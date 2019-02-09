@@ -1,0 +1,4 @@
+#Thu May 10 22:20:41 EET 2018
+base.0=/Users/elvanuslu/Documents/VeribisBarkod/platforms/android/app/build/intermediates/transforms/dex/release/0
+renamed.0=classes.dex
+file.0=/Users/elvanuslu/Documents/VeribisBarkod/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex

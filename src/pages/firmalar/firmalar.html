@@ -1,0 +1,119 @@
+<!--
+  Generated template for the FirmalarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="positive">
+    <ion-title>Firmalar</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-fab bottom right>
+    <button ion-fab>Kaydet</button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="Kaydet()">
+        <ion-icon name="create"></ion-icon>
+        <ion-label>Kaydet</ion-label>
+      </button>
+      <button ion-fab (click)="clickKaydet()">
+        <ion-icon name="hand"></ion-icon>
+        <ion-label>Sil</ion-label>
+      </button>
+      <button ion-fab (click)="clickKaydet()">
+        <ion-icon name="paper"></ion-icon>
+        <ion-label>Düzenle</ion-label>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+    <button ion-button color="secondary" (click)="FirmalarListe()">
+      <ion-icon name="locate"></ion-icon>  Firmalar Listesi</button>
+    
+
+      <ion-list>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Firma Adı</p>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="FirmaAdi" [ngModelOptions]="{standalone: true}" name="VergiNo" name="FirmaAdi"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Vergi Dairesi</p>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="VergiDairesi" [ngModelOptions]="{standalone: true}" name="VergiNo" name="VergiDairesi"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Vergi No</p>
+          </ion-label>
+          <ion-input type="number" [(ngModel)]="VergiNo" [ngModelOptions]="{standalone: true}" name="VergiNo"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Telefon</p>
+          </ion-label>
+          <ion-input type="tel" id="TelNo" name="TelNo" [(ngModel)]="TelNo" [ngModelOptions]="{standalone: true}"></ion-input>
+          <button ion-button color="secondary" (click)="phoneCall(TelNo1)" item-right>
+            <ion-icon name="call"></ion-icon>
+          </button>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Fax</p>
+          </ion-label>
+          <ion-input type="tel" [(ngModel)]="Fax" [ngModelOptions]="{standalone: true}" name="Fax"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Web</p>
+          </ion-label>
+          <ion-input type="url" [(ngModel)]="Web" [ngModelOptions]="{standalone: true}" name="Web"></ion-input> 
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>E-Posta</p>
+          </ion-label>
+          <ion-input type="email" [(ngModel)]="Eposta" [ngModelOptions]="{standalone: true}" name="Eposta"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Ülke</p>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="Ulke" [ngModelOptions]="{standalone: true}" name="Ulke"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>İl</p>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="IL" [ngModelOptions]="{standalone: true}" name="IL"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>İlçe</p>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="Ilce" [ngModelOptions]="{standalone: true}" name="Ilce"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="item item-input item-stacked-label" floating>
+            <p>Adres</p>
+          </ion-label>
+          <ion-textarea id="txtAdres" [(ngModel)]="Adres" [ngModelOptions]="{standalone: true}" name="Adres"></ion-textarea>
+        </ion-item>
+      </ion-list>
+
+</ion-content>
+

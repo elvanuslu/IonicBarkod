@@ -1,0 +1,114 @@
+<!--
+  Generated template for the ActivitePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar  color="positive">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Barkod Oku</ion-title>
+  <!-- <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  -->
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding  style="vertical-align:center" class="has-header">
+  <ion-fab bottom right>
+    <button ion-fab (click)="scanBarcode()">Oku</button>
+<!--    <ion-fab-list side="top">
+      <button ion-fab (click)="scanBarcode()">
+        <ion-icon name="barcode"></ion-icon>
+        <ion-label>Barkod Oku</ion-label>
+      </button>
+    </ion-fab-list>
+  -->
+  </ion-fab>
+<ion-list style="height:200">
+
+</ion-list>
+<ion-list>
+  <ion-card>
+
+ <!--   <ion-card-header style="background-color: #3b5998 !important; height:10; color: white;">
+      <p style="font-weight: bold; font-size: 14px; color: white;">
+        <ion-badge item-start color="dark">1}</ion-badge>
+        <span absolute-drag align="center"> Adı</span>
+    </ion-card-header>
+  -->
+    <ion-item class="item-remove-animate item-avatar item-icon-right" style="background-color: #F2F2F2 !important"  >
+      <ion-label floating>Okunan Barkod</ion-label>
+      <ion-input type="text" [(ngModel)]="bData" ></ion-input>
+
+      <span>
+        <p>Transfer ID : {{this.BarcodeData}} </p>
+        <p>Vergi Dairesi: Kadı</p>
+       
+      </span>
+    </ion-item>
+  </ion-card>
+  <button ion-button ion-button block color="secondary" (click)="scanBarcode()">Barkod Oku</button>
+
+</ion-list>
+
+<!--
+<ion-list id="aktiviteListe-list11">
+  <ion-item>
+    <ion-label floating>Firma Kişi</ion-label>
+    <ion-input type="text" [(ngModel)]="data.FirmaKisi" name="FirmaKisi" [ngModelOptions]="{standalone: true}"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="item item-input item-stacked-label" floating>Konu</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Konu" [ngModelOptions]="{standalone: true}" name="Konu"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Yapacak Kişi</ion-label>
+    <ion-input type="text" [(ngModel)]="data.YapacakKisi" [ngModelOptions]="{standalone: true}" name="YapacakKisi"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Aktivite Tipi</ion-label>
+    <ion-input type="text" [(ngModel)]="data.AktiviteTipi" [ngModelOptions]="{standalone: true}" name="AktiviteTipi"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Ne Zaman</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Nezaman"  [ngModelOptions]="{standalone: true}" name="NeZaman"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Süre</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Sure" [ngModelOptions]="{standalone: true}" name ="Sure"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Başlangıç</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Baslangic" [ngModelOptions]="{standalone: true}" name="Baslangic"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Bitiş</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Bitis" [ngModelOptions]="{standalone: true}" name="Bitis"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Proje</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Proje" [ngModelOptions]="{standalone: true}"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Sonuç</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Sonuc" [ngModelOptions]="{standalone: true}" name="Sonuc"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Nerede</ion-label>
+    <ion-input type="text" [(ngModel)]="data.Nerede" [ngModelOptions]="{standalone: true}" name="Nerede"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Yolda Geçen Süre</ion-label>
+    <ion-input type="text" [(ngModel)]="data.YoldaGecenSure" [ngModelOptions]="{standalone: true}" name="YoldaGecenSure"></ion-input>
+  </ion-item>
+</ion-list>-->
+</ion-content>

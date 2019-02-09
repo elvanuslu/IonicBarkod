@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar color="positive">
+    <ion-title>Giriş</ion-title>
+  <!--  <ion-buttons end>
+      <button ion-button icon-only (click)="addEvent()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content has-header" >
+  <!--
+ <ion-row class="item">
+    <ion-label class="item item-input item-stacked-label" floating>
+      <p>Veribis mobile - www.veribis.com.tr</p>
+    </ion-label>
+ </ion-row>
+-->
+  <ion-row class="logo-row">
+    <ion-col>
+      
+    </ion-col>
+    <ion-col width-67>
+    
+      <img src="http://www.veribis.com.tr/wp-content/uploads/2016/05/veribisLogo.png" />
+    </ion-col>
+    <ion-col></ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <div class="login-box" >
+
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Belge No Giriniz..." [(ngModel)]="this.IrsaliyeNo" name="email" [ngModelOptions]="{standalone: true}" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="text" placeholder="Personel No Giriniz..." [(ngModel)]="Santiye" name="password" [ngModelOptions]="{standalone: true}" required></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="signup-col">
+          <button ion-button class="submit-btn" full (click)="DataAl()" >Tamam</button>
+         
+        </ion-col>
+      </ion-row>
+
+  </div>
+</ion-content>
+
+<!--<ion-content padding>
+
+
+<button ion-button primary (click)="calenderOlustur()">Event</button>
+  <button ion-button secondary menuToggle>Toggle Menu</button>
+
+  
+</ion-content>-->

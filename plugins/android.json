@@ -1,0 +1,62 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-android-support-gradle-release": {
+      "ANDROID_SUPPORT_VERSION": "26.+",
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-calendar": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-nativegeocoder": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "mx.ferreyra.callnumber": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.elvanuslu.veribisbarkod"
+    }
+  }
+}
